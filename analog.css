@@ -1,0 +1,137 @@
+body{
+    background-color: #25252d;
+    color: white;
+}
+.analogcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height:100vh;
+
+}
+.aclock{
+    /* border: 10px solid black; */
+    border-radius: 50% ;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    width: 70vh;
+    height:70vh;
+    align-self: center;
+    position:relative;
+    background-color: #2e2f41;
+}
+.point{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color: white;
+    /* border: 2px solid black; */
+    transform: translate(-50%, -50%);
+}
+.no{
+    font-size: 40px;
+    font-weight:900;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+.no1  { top: 15%;  left: 75%; }  
+.no2  { top: 30%;  left: 88%; } 
+.no3  { top: 50%;  left: 95%; }  
+.no4  { top: 70%;  left: 88%; }  
+.no5  { top: 85%;  left: 75%; } 
+.no6  { top: 95%;  left: 50%; }  
+.no7  { top: 85%;  left: 25%; } 
+.no8  { top: 70%;  left: 12%; }  
+.no9  { top: 50%;  left: 5%;  }  
+.no10 { top: 30%;  left: 12%; } 
+.no11 { top: 15%;  left: 25%; }  
+.no12 { top: 5%;   left: 50%; }  
+
+.hourhand{
+    width:12px;
+    height:145px;
+    background-image: linear-gradient(to right, #5bc5f9, #6254fb);
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 3px;
+    bottom:50%;
+    left: 50%;
+    transform: translate(-4px, -4px);
+}
+.minhand{
+    width:12px;
+    height:195px;
+    /* border: 2px solid black; */
+    position: absolute;
+    background-image: linear-gradient(to right, #feab63, #f56498);
+    border-radius: 3px;
+    bottom:50%;
+    left: 50%;
+    transform: translate(-4px, -4px);
+} 
+.sechand{
+    width:5px;
+    height:160px;
+    background-image: linear-gradient(to right, #7ef5da, #12b54f);
+    border-radius: 3px;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom:45%; 
+    left: 45%;
+    transform: translate(-2px, -4px);
+}
+
+#shand{
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    /* transform: translate(-2px, -4px); */
+}
+#mhand{
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    /* transform: translate(-2px, -4px); */
+}
+#hrhand{
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    /* transform: translate(-2px, -4px); */
+}
+p{
+    color:#383b4e;
+    font-size: 150px;
+    font-weight: 900;
+    position: absolute;
+    left:25%;
+}
+@media screen and (max-width:480px) {
+    .aclock{
+        width:280px;
+        height: 280px;
+    }
+    p{
+        font-size: 88px;
+    }
+    .hourhand{
+        height: 88px;
+        width: 7px;
+    }
+    .minhand{
+        height: 120px;
+        width: 7px;
+    }
+    .sechand{
+        height: 104px;
+        width: 3px;
+    }
+    .no{
+        font-size:20px;
+    }
+}
