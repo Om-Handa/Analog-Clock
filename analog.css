@@ -111,7 +111,7 @@ p{
     position: absolute;
     left:25%;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:800px) {
     .aclock{
         width:280px;
         height: 280px;
